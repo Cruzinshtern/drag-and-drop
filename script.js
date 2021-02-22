@@ -15,7 +15,9 @@ for(const empty of empties) {
 
 
 //Drag functions
-function dragStart() {
+function dragStart(e) {
+    const letter = document.getElementById('fill').textContent;
+    e.dataTransfer.setData('text', letter)
     this.className += ' hold';
     setTimeout(() => (this.className = 'invisible'), 0)
 }
@@ -38,7 +40,9 @@ function dragLeave() {
     this.className = 'empty';
 }
 
-function dragDrop() {
+function dragDrop(e) {
+    const rrr = e.dataTransfer.getData('text')
+    console.log(rrr)
     this.className = 'empty';
     this.append(fill);
 }
