@@ -1,0 +1,38 @@
+body {
+    background: azure;
+}
+
+.fill {
+    background: yellow;
+    position: relative;
+    height: 150px;
+    width: 150px;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.empty {
+    display: inline-block;
+    height: 160px;
+    width: 160px;
+    margin: 10px;
+    border: 3px salmon solid;
+    background-color: white;
+}
+
+.hold {
+    border: solid greenyellow 4px;
+}
+
+.hovered {
+    background: hotpink;
+    border-style: dashed;
+}
+
+.invisible {
+    display: none;
+}
+
+
+
